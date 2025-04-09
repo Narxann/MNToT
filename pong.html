@@ -66,7 +66,6 @@
                 resetBall();
             }
         }
-
         // Paddle movement logic
         function movePaddles() {
             leftPaddleY += leftPaddleSpeed;
@@ -79,7 +78,6 @@
             if (rightPaddleY < 0) rightPaddleY = 0;
             if (rightPaddleY > canvas.height - paddleHeight) rightPaddleY = canvas.height - paddleHeight;
         }
-
         // Paddle and ball collision detection
         function detectCollisions() {
             // Left paddle
@@ -131,7 +129,6 @@
                 rightPaddleSpeed = 0;
             }
         });
-
         // Start game loop
         gameLoop();
     </script>
